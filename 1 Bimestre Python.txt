@@ -1,0 +1,147 @@
+Lista de exercícios Python 1 Bimestre
+Bruno Braga 2-HID
+
+A)
+celsius = float(input("Digite a temperatura em celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print('%.2f Celsius é: %0.2f Fahrenheit' %(celsius, fahrenheit))
+
+B)
+fahrenheit = float(input("Digite a temperatura em fahrenheit: "))
+celsius = (fahrenheit / 9*5) + 32
+print('%.2f Fahrenheit é Celsius: %0.2f ' %(fahrenheit, celsius))
+
+c)
+altura = float(input('Digite a altura: '))
+r = float(input('Digite o raio: '))
+volume = float(3.14159 * r ** 2 * altura)
+print('O volume é {}'.format (volume))
+d)
+tempo = float(input('Digite o tempo gasto: '))
+V = float(input('Digite a velocidde média: '))
+D = float(tempo * V)
+Litro= float(D/12)
+print('O tempo gasto foi {}'.format (tempo))
+print('A velocidade média era {}'.format (V))
+print('A distância percorrida foi {}'.format (D))
+print("litros gastos {}".format (Litro))
+e)
+valor = float(input('Digite o valor: '))
+taxa = float(input('Digite a taxa: '))
+tempo = int(input('digite o tempo: '))
+prestacao = valor + (valor*(taxa/100)*tempo)
+print('A prestação foi de {}'.format(prestacao))
+f)
+A = float(input('Digite o valor de A: '))
+B = float(input('Digite a taxa de B: '))
+C = A
+A = B
+B = C
+print('Valor de A {}'.format(A))
+print('Valor de B {}'.format(B))
+g)
+A = int(input('Digita a porra do numero: '))
+B = int(input('Digite outro numero: '))
+C = int(input('Digite outro numero: '))
+D = int(input('Digite o ultimo numero: '))
+a1 = A+B
+a2 = A+C
+a3 = A+D
+a4 = B+C
+a5 = B+D
+a6 = C+D
+m1 = A*B
+m2 = A*C
+m3 = A*D
+m4 = B*C
+m5 = B*D
+m6 = C*D
+print('Os resultados foram {},{},{},{},{},{},{},{},{},{},{},{}'.format(a1,a2,a3,a4,a5,a6,m1,m2,m3,m4,m5,m6))
+h)
+comprimento = float(input('Digite o comprimento: '))
+largura = float(input('Digite a largura: '))
+altura = float(input('digite a altura: '))
+volume = comprimento * largura * altura
+print('o valor do volume é {}'.format(volume))
+i)
+numero = int(input('Digite um numero inteiro: '))
+numero2 = numero ** 2
+print('O resultado é: {}'.format(numero2))
+J)
+n1 = int(input('Digite um numero: '))
+n2 = int(input('Digite outro numero: '))
+resp = (n1-n2)*(n1-n2)
+print('O valor do quadrado da diferença é: {}'.format(resp))
+K)
+real = float(input('Digite o valor em reais: '))
+cotacao = float(input('Digite a cotacao do dolar: '))
+res = real * cotacao
+print('O valor em dolar é: {}'.format(res))
+L)
+dolar = float(input('Digite o valor em dolar: '))
+cotacao = float(input('Digite o valor da cotação: '))
+res = dolar / cotacao
+print('O valor da cotacao em real é: {}'.format(res))
+M)
+a = int(input('Digite um numero: '))
+b = int(input('Digite outro numero: '))
+c = int(input('Digite mais um numero: '))
+res = a*a + b*b + c*c
+print('O resultado é: {}'.format(res))
+N)
+a = int(input('Digite um numero inteiro: '))
+b = int(input('Digite outro numero inteiro: '))
+c = int(input('Digite mais um numero inteiro: '))
+resp1 = a+b+c
+resp2 = resp1**2
+print('O resultado é {}'.format(resp2))
+O)
+a = int(input('Digite um numero: '))
+b = int(input('Digite um numero: '))
+c = int(input('Digite um numero: '))
+d = int(input('Digite um numero: '))
+p = a * c
+s = b + d
+print('O resultado do produto é {} e o resultado da soma é {}'.format(p,s))
+P)
+sm = float(input('Digite o valor do salario mensal: '))
+pr = float(input('Digite o valor do percentual do reajuste: '))
+ns = sm * pr
+print('O valor do novo salario é de: {}'.format(ns))
+Q)
+r = float(input('Digite o valor do raio: '))
+a = 3.14159 * r**2
+print('O valor da area é de {}'.format(a))
+R)
+a = int(input('Quantidade de votos validos Candidato A: '))
+b = int(input('Quantidade de votos validos Candidato B: '))
+c = int(input('Quantidade de votos validos Candidato c: '))
+votonulo = int(input('Quantidade de votos nulos: '))
+votobranco = int(input('Quantidade de votos brancos: '))
+votovalido = a+b+c
+totaleleitor = votovalido+votonulo+votobranco
+perctot_valido = votovalido*100/totaleleitor
+percvalidoA = a*100/totaleleitor
+percvalidoB = b*100/totaleleitor
+percvalidoC = c*100/totaleleitor
+percnulo = votonulo*100/totaleleitor
+percbranco = votobranco*100/totaleleitor
+print('Os valores são Percentual valido total: {} Percentual Candidato A {} Percentual Candidato B {} Percentual Candidato C {} Nulo {} Branco {}'.format(perctot_valido,percvalidoA,percvalidoB,percvalidoC,percnulo,percbranco))
+S)
+a = int(input('Digite o valor de A: '))
+b = int(input('Digite o valor de B: '))
+a1 = a + b
+a2 = a - b
+a3 = a * b
+a4 = a / b
+print('Os resultados são {} {} {} {} '.format(a1,a2,a3,a4))
+T)
+distancia = float(input('Digite o valor da distancia em metros: '))
+tempo = float(input('Digite o tempo: '))
+velocidade = distancia * 1000 / tempo*60
+print('a velocidade do projetil na distancia {} em quilometros é de {}'.format(distancia,velocidade))
+U)
+raio = float(input('Digite o valor do raio: '))
+volume = 4/3 * 3.14159 * raio**3
+print('O valor do volume é de {} '.format(volume))
+
