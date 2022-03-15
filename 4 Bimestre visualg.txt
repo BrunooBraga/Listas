@@ -1,0 +1,1042 @@
+Lista de Exercícios
+4° Bimestre
+
+
+
+
+
+Diego Nunes Lino,
+Bruno Braga
+&
+João Pedro Vilas Boas
+
+
+
+
+
+
+
+
+2021
+IPC
+
+LISTA 1
+
+a-)
+VALOR
+Algoritmo "semnome"
+Var
+   VALOR, TAXA, TEMP: REAL
+
+   // ETE PROCEDIMENTO É EXEMPLO DE PASS. PAR METRO POR VALOR
+   PROCEDIMENTO REAJUSTE(V: REAL; TX: REAL ; TP: REAL)
+   VAR
+      PRESTACAO: REAL
+   INICIO
+         PRESTACAO <- V + (V*(TX/100) * TP)
+         ESCREVAL ("NOVA PRESTACAO = ", PRESTACAO)
+   FIMPROCEDIMENTO
+
+Inicio
+// PREST = VALOR + ( VALOR * (TAXA/100) * TEMPO)
+
+   ESCREVAL ("DIGITE O VALOR DA PRESTAÇÃO EM ATRASO:")
+   LEIA (VALOR)
+   ESCREVAL ("iNFORME A TAXA DE JUROS PARA REAJUSTE")
+   LEIA (TAXA)
+   ESCREVAL ("INFORME O TEMPO DE ATRASO DA PRESTAÇÃO")
+   LEIA (TEMP)
+   REAJUSTE(VALOR, TAXA, TEMP)
+
+Fimalgoritmo
+-----------------------------
+REFERÊNCIA
+Algoritmo "semnome"
+Var
+   VALOR, TAXA, TEMP: REAL
+
+   // ESTE PROCEDIMENTO É EXEMPLO DE PASS. PAR METRO POR REFERENCIA
+   PROCEDIMENTO REAJUSTE(VAR V: REAL; TX: REAL ; TP: REAL)
+   VAR
+   INICIO
+         V <- V + (V*(TX/100) * TP)
+   FIMPROCEDIMENTO
+
+Inicio
+// PREST = VALOR + ( VALOR * (TAXA/100) * TEMPO)
+
+   ESCREVAL ("DIGITE O VALOR DA PRESTAÇÃO EM ATRASO:")
+   LEIA (VALOR)
+   ESCREVAL ("iNFORME A TAXA DE JUROS PARA REAJUSTE")
+   LEIA (TAXA)
+   ESCREVAL ("INFORME O TEMPO DE ATRASO DA PRESTAÇÃO")
+   LEIA (TEMP)
+   REAJUSTE(VALOR, TAXA, TEMP)
+   ESCREVAL ("NOVA PRESTACAO = ", VALOR)
+
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+b-)
+VALOR
+Algoritmo "semnome"
+Var
+   n : inteiro
+
+//procedimento com pass. parâmetro por valor
+procedimento somarnumeros(vf: inteiro)
+var
+   soma: inteiro
+   contador: inteiro
+inicio
+      para contador de 1 ate vf passo 1 faca
+           soma<- soma + contador
+      fimpara
+      escreval ("soma com (procedimento pass. para. VALOR) dos valores = " , soma)
+fimprocedimento
+
+Inicio
+   ESCREVAL ("Informe o limite da soma:")
+   LEIA (n)
+   somarnumeros(n)
+Fimalgoritmo
+-----------------------------
+REFERÊNCIA
+Algoritmo "semnome"
+Var
+   n : inteiro
+
+
+//procedimento com pass. parâmetro por REFERENCIA
+procedimento somarnumeros(VAR vf: inteiro)
+var
+   SOMA: INTEIRO
+   contador: inteiro
+inicio
+      para contador de 1 ate vf passo 1 faca
+           SOMA<- SOMA + contador
+      fimpara
+      VF<- SOMA
+fimprocedimento
+
+Inicio
+   ESCREVAL ("Informe o limite da soma:")
+   LEIA (n)
+   somarnumeros(n)
+   ESCREVAL ("SOMA DOS VALORES DO INTEVALO (PASS. PARAMETRO POR REFERENCIA) = ", N)
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+C) 
+VALOR
+Algoritmo "semnome"
+Var
+
+cont, limite, anterior, atual, proximo: inteiro
+
+procedimento fibonacci(x:inteiro)
+var
+ inicio
+         anterior<-x
+         x<-proximo
+         proximo<-anterior+x
+   fimprocedimento
+Inicio
+      escreval("Série de fibonacci do N termo")
+  	escreva("Digite o valor para N: ")
+  	leia(limite)
+  	anterior<-0
+  	atual<-1
+  	proximo<-1
+  	para cont de 1 ate limite passo 1 faca
+           escreval(atual)
+           fibonacci(atual)
+  	fimpara
+Fimalgoritmo
+----------------------------------
+REFERÊNCIA
+Algoritmo "12.4 - c por referencia"
+ 
+Var
+ 
+   n: inteiro
+ 
+   procedimento Fibonacci(var x: inteiro)
+   var
+   
+  	termo, i, p: inteiro
+  	
+   inicio
+ 
+     	i <- 1
+     	para p de 1 ate x passo 1 faca
+          	termo <- termo + i
+          	i <- termo - i
+     	fimpara
+     	x <- termo
+ 
+   fimprocedimento
+ 
+Inicio
+ 
+  	escreval("Série de fibonacci do N termo")
+  	escreva("Digite o valor para N: ")
+  	leia(n)
+  	escreval("")
+  	escreva("O", n, " termo é:")
+  	Fibonacci(n)
+  	escreva(n)
+ 
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+D)
+REFERÊNCIA
+ Algoritmo "12.4 - d por referencia"
+ 
+Var
+ 
+   b: real
+   ex: inteiro
+ 
+   procedimento Potencia(var x: real; y: inteiro)
+   var
+ 
+   inicio
+     	x <- x^y
+   fimprocedimento
+ 
+Inicio
+ 
+  	escreval("Calculo de potência")
+  	escreva("Digite o valor da base: ")
+  	leia(b)
+  	escreva("Digite o valor do expoente: ")
+  	leia(ex)
+  	escreval("")
+  	escreva(b, " elevado a", ex, " é: ")
+  	Potencia(b,ex)
+  	escreva(b)
+ 
+Fimalgoritmo
+-----------------------------
+
+VALOR
+Algoritmo "semnome"
+Var
+   ba, exp:inteiro
+   procedimento potencia(b:inteiro; ex:inteiro)
+   var
+  	poten:real
+   inicio
+         poten<-b^ex
+         escreval(poten)
+   fimprocedimento
+Inicio
+     	 escreval("Calculo de potência")
+  	escreva("Digite o valor da base: ")
+  	leia(ba)
+   	 escreva("Digite o valor do expoente: ")
+  	leia(exp)
+escreval("")
+  	escreva(b, " elevado a", ex, " é: ")
+      potencia(ba,exp)
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+E) 
+REFERÊNCIA
+Algoritmo "12.4 - e por referencia"
+ 
+Var
+ 
+   n: inteiro
+ 
+   procedimento parimpar(var x: inteiro)
+   var
+  	y: inteiro
+   inicio
+     	 se(x%2=0)entao
+        	escreva("O número", y, " é par")
+     	senao
+          	escreva("O número", y, " é ímpar")
+     	fimse
+ 
+   fimprocedimento
+ 
+Inicio
+ 
+  	escreval("Verificar se um número qualquer, inteiro, é par ou ímpar")
+  	escreva("Digite um número: ")
+  	leia(n)
+  	escreval("")
+	  parimpar(n)
+ 
+Fimalgoritmo
+-----------------------------
+
+VALOR
+
+Algoritmo "SEMNOME"
+Var
+   n: inteiro
+   procedimento parimpar(x: inteiro)
+   var
+   inicio
+         se(x%2=0)entao
+        	escreva("O número", y, " é par")
+     	senao
+          	escreva("O número", y, " é ímpar")
+     	fimse
+   fimprocedimento
+Inicio
+   escreval("Verificar se um número qualquer, inteiro, é par ou ímpar")
+  	escreva("Digite um número: ")
+  	leia(n)
+  	escreval("")
+   parimpar(n)
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+F)
+REFERÊNCIA
+ Algoritmo "teste"
+
+Var
+ 
+a,b,c,resultado : inteiro
+ 
+ 
+procedimento somas(x : inteiro; y : inteiro;z : inteiro; var soma : inteiro)
+                          	
+var
+ 
+inicio
+  	x <- (x*x)
+  	y <- (y*y)
+  	z <- (z*z)
+  	
+  	soma <- x + y + z
+ 
+fimprocedimento
+ 
+Inicio
+ 
+   escreva("Digite o valor de A: ")
+   leia(A)
+   escreva("Digite o valor de B: ")
+   leia(B)
+   escreva("Digite o valor de C: ")
+   leia(C)
+   
+   somas(a, b, c, resultado)
+   
+   escreval("O quadrado = ", resultado)
+ 
+ 
+Fimalgoritmo
+-----------------------------
+VALOR
+Algoritmo "SEMNOME"
+Var
+   a, b, c: inteiro
+   procedimento somas (x: real; y: real; z: real)
+   var
+  	soma:inteiro
+   inicio
+     	x<-(x^2)+(y^2)+(z^2)
+     	escreval("O quadrado = ", x)
+   fimprocedimento
+Inicio
+  	escreval("digite um numero: ")
+  	leia(a)
+  	escreval("digite outro numero:")
+  	leia(b)
+  	escreval("digite mais um numero:")
+  	leia(c)
+	  somar(a,b,c)
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+G)
+REFERÊNCIA
+Algoritmo "semnome"
+
+ 
+Var
+ 
+a, b, c, resultado : inteiro
+ 
+ 
+procedimento somas(x : inteiro; y : inteiro;z : inteiro; var soma : inteiro)
+                          	
+var
+ 
+inicio
+  	soma <- x + y + z
+  	soma <- (soma*soma)
+fimprocedimento
+ 
+Inicio
+ 
+  	escreva("Digite um valor: ")
+  	leia(A)
+  	escreva("Digite outro valor: ")
+  	leia(B)
+      escreva("Digite mais um valor: ")
+  	leia(C)
+  	
+  	somas(a, b, c, resultado)
+  	
+  	escreval("O quadrado = ", resultado)
+ 
+ 
+Fimalgoritmo
+-----------------------------
+VALOR
+Algoritmo "SEMNOME”
+Var
+   a, b, c: inteiro
+   procedimento somar (x: real; y: real; z: real)
+   var
+  	soma: real
+   inicio
+     	soma<-(x+y+z)^2
+     	escreval("quadrado = ", soma)
+   fimprocedimento
+Inicio
+  	escreval("digite um número: ")
+  	leia(a)
+  	escreval("digite outro numero:")
+  	leia(b)
+  	escreval("digite mais um  número:")
+  	leia(c)
+  	somar(a,b,c)
+Fimalgoritmo
+ 
+
+-------------------------------------------------------------------------------------
+
+H) 
+REFERÊNCIA
+Algoritmo "semnome"
+
+
+Var
+ 
+temp : real
+ 
+ 
+procedimento celsius(var valor : real)
+                          	
+var
+ 
+inicio
+  	valor <- (temp - 32) * 5/9;
+fimprocedimento
+ 
+Inicio
+  	escreva("quantos graus? em F")
+  	leia(temp)
+  	
+  	celsius(temp)
+  	
+  	escreva("graus em C=", temp)
+ 
+Fimalgoritmo
+-----------------------------
+VALOR
+Algoritmo "semnome"
+
+
+Var
+ 
+temp : real
+ 
+ 
+procedimento celsius(valor : real)
+                          	
+var
+ 
+inicio
+  	valor <- (temp - 32) * 5/9;
+	
+fimprocedimento
+ 
+Inicio
+  	escreva("quantos graus? em F")
+  	leia(temp)
+  	
+  	celsius(temp)
+  	
+  	escreva("graus em C=", temp)
+ 
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+ 
+I) 
+REFERÊNCIA
+Algoritmo "TESTE”
+Var
+ 
+cot, dol: real
+ 
+ 
+procedimento conversao(var valor : real; taxa : real)
+                          	
+var
+ 
+inicio
+  	valor <- (valor*taxa)
+fimprocedimento
+ 
+Inicio
+  	escreva("Quantos dollares vc tem? ")
+  	leia(dol)
+  	escreva("qual a cotação? ")
+  	leia(cot)
+  	
+  	conversao(dol, cot)
+  	
+  	escreval("você tem míseros:",dol,”reais”)
+ 
+Fimalgoritmo
+----------------------------- 
+ VALOR
+Algoritmo "TESTE”
+Var
+ 
+cot, dol: real
+ 
+ 
+procedimento conversao(val : real; tax : real)
+                          	
+var
+ dinh:inteiro
+inicio
+  	dinh <- (val*tax)
+escreval("você tem míseros:",dinh,”reais”)
+fimprocedimento
+ 
+Inicio
+  	escreva("Quantos dollares vc tem? ")
+  	leia(dol)
+  	escreva("qual a cotação? ")
+  	leia(cot)
+  	
+  	conversao(dol, cot)
+  	
+  	
+ 
+Fimalgoritmo
+
+ 
+-------------------------------------------------------------------------------------
+ 
+K)
+REFERÊNCIA
+ Algoritmo "semnome"
+
+Var
+ 
+valor : inteiro
+ 
+ 
+procedimento teste( var num : inteiro)
+                          	
+var
+ 
+inicio
+  	se ((num mod 2 =0) ou (num mod 3 = 0)) entao
+     	escreval("O valor eh divisivel por 2 ou por 3!")
+  	senao
+       	escreval("Valor invalido")
+  	fimse
+fimprocedimento
+ 
+Inicio
+  	escreva("Digite o valor: ")
+  	leia(valor)
+  	
+  	teste(valor)
+Fimalgoritmo
+-----------------------------
+VALOR
+ Algoritmo "semnome"
+
+Var
+ 
+valor : inteiro
+ 
+ 
+procedimento teste( num : inteiro)
+                          	
+var
+ 
+inicio
+  	se ((num mod 2 =0) ou (num mod 3 = 0)) entao
+     	escreval("é divisível por 2 ou 3!")
+  	senao
+       	escreval("não divisível")
+  	fimse
+fimprocedimento
+ 
+Inicio
+  	escreva("Digite um numero ")
+  	leia(valor)
+  	
+  	teste(valor)
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+L)
+REFERÊNCIA
+ Algoritmo "semnome"
+ 
+ 
+Var
+ 
+valor : inteiro
+ 
+ 
+procedimento teste(var numero : inteiro)
+                          	
+var
+ 
+inicio
+  	se (numero mod 2 <> 0) e (numero mod 3  <> 0) entao
+     	escreval("não é divisível por 2 e 3!")
+  	senao
+       	escreval("divisível")
+  	fimse
+fimprocedimento
+ 
+Inicio
+  	escreva("Digite um numero: ")
+leia(valor)
+  	
+  	teste(valor)
+-----------------------------
+VALOR
+ Algoritmo "semnome"
+ 
+ 
+Var
+ 
+valor : inteiro
+ 
+ 
+procedimento teste( numero : inteiro)
+                          	
+var
+ 
+inicio
+  	se (numero mod 2 <> 0) e (numero mod 3  <> 0) entao
+     	escreval("não é divisível por 2 e 3!")
+  	senao
+       	escreval("divisível")
+  	fimse
+fimprocedimento
+ 
+Inicio
+  	escreva("Digite um numero: ")
+leia(valor)
+  	
+  	teste(valor)
+fimalgoritomo
+-------------------------------------------------------------------------------------
+
+M-)
+VALOR
+Algoritmo "M”
+Var
+   n: inteiro
+   procedimento teste(y:inteiro)
+   var
+   inicio
+         se(y<0)entao
+                     y<-y*(-1)
+                     escreval(y)
+     	senao
+              escreval(n)
+     	fimse
+   fimprocedimento
+Inicio
+  	escreval("digite um numer")
+  	leia(n)
+  	teste(n)
+Fimalgoritmo
+-----------------------------
+REFERÊNCIA
+Algoritmo "M”
+Var
+   n: inteiro
+   procedimento teste(var y:inteiro)
+   var
+   inicio
+         se(y<0)entao
+                     y<-y*(-1)
+                     escreval(y)
+     	senao
+              escreval(n)
+     	fimse
+   fimprocedimento
+Inicio
+  	escreval("digite um numer")
+  	leia(n)
+  	teste(n)
+Fimalgoritmo
+
+
+ -------------------------------------------------------------------------------------
+
+N-)
+VALOR
+Algoritmo "N”
+Var
+   n, sex: caractere
+   procedimento bomdia(sx:caractere)
+   var
+   inicio
+         se(sx="m")entao
+                                escreval("bom dia Sr. ", n)
+     	senao
+              escreval("bom dia Sra. ", n)
+     	fimse
+   fimprocedimento
+Inicio
+      escreval("qual seu nome?")
+  	leia(nome)
+      escreval("qual seu sexo? m ou f?")
+  	leia(sex)
+  	bomdia(sex)
+Fimalgoritmo
+-----------------------------
+REFERÊNCIA
+Algoritmo "N”
+Var
+   n, sex,sxo: caractere
+   procedimento bomdia(var sx:caractere)
+   var
+   inicio
+         se(sx="m")entao
+sxo<-1
+     	fimse
+   fimprocedimento
+Inicio
+      escreval("qual seu nome?")
+  	leia(nome)
+      escreval("qual seu sexo? m ou f?")
+  	leia(sex)
+  	bomdia(sex)
+se(sxo==1)entao
+                           escreval("bom dia Sr. ", n)
+     	senao
+              escreval("bom dia Sra. ", n)
+     	fimse
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+O-)
+VALOR 
+Algoritmo "O”
+Var
+  n:inteiro
+  procedimento fator(numero:inteiro)
+  var
+ 	f, x:inteiro
+  inicio
+ 	x<-1
+ 	fat<-1
+ 	para x de 1 ate numero faca
+      	f<-f*x
+ 	fimpara
+ 	escreval(“fator é igual a”,f)
+  fimprocedimento
+Inicio
+      escreval("digite um numero")
+  	leia(n)
+  	fator(n)
+Fimalgoritmo
+-----------------------------
+REFERÊNCIA
+Algoritmo "O”
+Var
+  n:inteiro
+  procedimento fator(var numero:inteiro)
+  var
+ 	f, x:inteiro
+  inicio
+ 	x<-1
+ 	fat<-1
+ 	para x de 1 ate numero faca
+      	f<-f*x
+ 	fimpara
+numero<-f
+ 	
+  fimprocedimento
+Inicio
+      escreval("digite um numero")
+  	leia(n)
+  	fator(n)
+escreval(“fator é igual a”,n)
+Fimalgoritmo
+
+
+
+
+
+
+
+
+LISTA 2
+
+
+
+a-)
+Algoritmo "semnome"
+Var
+   n : inteiro
+   RESSOMA:INTEIRO
+
+//FUNCAO
+FUNCAO somarnumeros(vf: inteiro): INTEIRO
+var
+   SOMA: INTEIRO
+   contador: inteiro
+inicio
+      para contador de 1 ate vf passo 1 faca
+           SOMA<- SOMA + contador
+      fimpara
+      RETORNE SOMA
+FIMFUNCAO
+
+Inicio
+   ESCREVAL ("Informe o limite da soma:")
+   LEIA (n)
+   RESSOMA<- somarnumeros(n)
+   ESCREVAL ("SOMA DOS VALORES DO INTEVALO (FUNCAO) = ", RESSOMA)
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+
+
+b-)
+Algoritmo "semnome"
+Var
+   cont, lim, resp: inteiro
+   atu, prox, ant: inteiro
+   funcao fibonacci(at:inteiro): INTEIRO
+   var
+   inicio
+         antr<-at
+         at<-prox
+         prox<-antr+at
+   fimfuncao
+Inicio
+      escreval("quantos termos da sequencia:")
+  	leia(lim)
+  	ant<-0
+  	atul<-1
+  	prox<-1
+  	para cont de 1 ate limite faca
+           escreval(atul)
+           resp<-fibonacci(atu)
+           escreval(resp)
+  	fimpara
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------
+
+
+
+c-)
+Algoritmo "semnome"
+Var
+   NOVAPRESTACAO , VALOR, TAXA, TEMP: REAL
+
+   // CALCULO DA PRESTACAO USANDO FUNCAO
+   FUNCAO REAJUSTE(V: REAL; TX: REAL ; TP: REAL): REAL
+   VAR
+      PRESTACAO: REAL
+   INICIO
+         PRESTACAO <- V + (V*(TX/100) * TP)
+         RETORNE PRESTACAO
+   FIMFUNCAO
+
+Inicio
+   ESCREVAL ("DIGITE O VALOR DA PRESTAÇÃO EM ATRASO:")
+   LEIA (VALOR)
+   ESCREVAL ("iNFORME A TAXA DE JUROS PARA REAJUSTE")
+   LEIA (TAXA)
+   ESCREVAL ("INFORME O TEMPO DE ATRASO DA PRESTAÇÃO")
+   LEIA (TEMP)
+   NOVAPRESTACAO <- REAJUSTE(VALOR, TAXA, TEMP)
+   ESCREVAL ("NOVA PRESTACAO = ", NOVAPRESTACAO)
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+
+
+
+
+d-)
+Algoritmo "semnome"
+Var
+   ba, exp:inteiro
+   r:real
+   funcao potencia(b:inteiro; ex:inteiro): real
+   var
+  	p:real
+   inicio
+         p<-b^ex
+     	retorne p
+   fimfuncao
+Inicio
+      escreval("digite um numero para base")
+  	leia(ba)
+      escreval("digite um numero para expoente")
+  	leia(exp)
+      r<-potencia(ba,exp)
+  	escreval(r)
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+
+
+
+e-)
+Algoritmo "semnome"
+Var
+   ba, exp:inteiro
+   r:real
+   funcao potencia(b:inteiro; ex:inteiro): real
+   var
+  	p:real
+   inicio
+         p<-b^ex
+     	retorne p
+   fimfuncao
+Inicio
+      escreval("digite um numero para base")
+  	leia(ba)
+      escreval("digite um numero para expoente")
+leia(exp)
+      r<-potencia(ba,exp)
+  	escreval(r)
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+
+
+
+f-)
+Algoritmo "semnome"
+Var
+  n1,n2, n3: inteiro
+   result:real
+   funcao somas (var x: real; y: real; z: real): real
+   var
+   inicio
+         x<-(x+y+z)*(x+y+z)
+     	retorne x
+   fimfuncao
+Inicio
+      escreval("digite um numero: ")
+  	leia(n1)
+      escreval("digite outro numero:")
+  	leia(n2)
+  	escreval("digite mais um numero:")
+  	leia(n3)
+     result<-somas(n1,n2,n3)
+      escreval("o quadrado é ", result)
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+
+
+
+g-)
+Algoritmo "semnome"
+Var
+   dol, reais, cot:real
+   funcao conversao(d:real):real
+   var
+  	re:real
+   inicio
+     	re<-d*cot
+     	retorne re
+   fimfuncao
+Inicio
+      escreval("quantos dollares?")
+  	leia(dol)
+       escreval(“qual é a cotação do dollar?”)
+leia(cot)
+      reais<-conversao(dol)
+      escreval(reais," reais")
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+
+ 
+
+h-)
+ Algoritmo "semnome”
+Var
+   r, doll,cot:real
+   funcao conversao(reais:real):real
+   var
+  	d:real
+   inicio
+     	d<-reais/cot
+     	retorne d
+   fimfuncao
+Inicio
+      escreval("quantos reais?:")
+  	leia(r)
+escreval(“qual é a cotação do dollar?”)
+leia(cot)
+      doll<-conversao(r)
+      escreval(doll," dolares")
+Fimalgoritmo
+-------------------------------------------------------------------------------------
+
+
+
+
+i-)
+Algoritmo "semnome”
+Var
+   ce, result: real
+   funcao fahrenheit (fa: real): real
+   var
+  	conv: real
+   inicio
+         conv<-(9*fa+160)/5
+     	retorne conv
+   fimfuncao
+Inicio
+      escreval("quantos graus? em °C")
+  	leia(ce)
+      result<-fahrenheit(ce)
+      escreval(ce,"Em graus celsius é", result,"em fahrenheit ")
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1340 @@
+lista 2 do 1° bimestre
+--------------------------------------------
+1)
+Algoritmo "semnome"
+
+Var
+
+ N: inteiro
+ r5:  real
+ r4: real
+
+Inicio
+
+     escreval ("escolha um número inteiro")
+     leia (N)
+     r4<- (N%4)
+     r5<- (N%5)
+     se ((r4 = 0) e (r5 = 0))  entao
+        escreval ("e divisivel por 4 e 5")
+               senao
+                 escreval ("nao e divisivel por 4 e 5")
+     fimse
+fimaogoritmo
+
+-----------------------------------------
+3)a)
+Algoritmo "semnome"
+
+Var
+
+n1, diferenca, n2: inteiro
+
+Inicio
+
+      escreval ("escreva um número inteiro para calcular a diferenca")
+         leia (n1)
+      escreval ("escreva outro número inteiro para calcular a diferenca")
+         leia (n2)
+      se (n1 > n2) entao
+      diferenca<- n1-n2
+      escreval ("o resultado da diferença é:", diferenca)
+      senao
+      diferenca<- n2-n1
+      escreval ("o resultado da diferença é:", diferenca)
+      fimse
+ fimalgoritmo
+
+-----------------------------------------------------
+3)b)
+Algoritmo "semnome"
+
+Var
+
+n1, result: real
+
+Inicio
+
+      escreval ("digite um número positivo ou negativo")
+              leia (n1)
+      se (n1 > 0) entao
+         escreval (" o número em sua forma positiva é:", n1)
+        senao
+             result<- n1 * -1)
+                      escreval (" o número em sua forma positiva é:", result)
+      fimse
+Fimalgoritmo
+
+--------------------------------------------------------
+3)c)
+Algoritmo "semnome"
+
+Var
+
+  n1, n2, n3, n4, media : real
+
+Inicio
+
+   escreval ("quanto você tirou na primeira prova?")
+            leia (n1)
+   escreval ("quanto você tirou na segunda prova?")
+            leia (n2)
+   escreval ("quanto você tirou na terceira prova?")
+            leia (n3)
+   escreval ("quanto você tirou na quarta prova?")
+            leia (n4)
+   se ((n1<11) e (n1>-1) e (n2<11) e (n2>-1) e (n3<11) e (n3>-1) e (n4<11) e (n4>-1))  entao
+          media<- (n1 + n2 + n3 + n4)/4)
+      senao
+           escreval ("reinicie o programa e utilize apenas números de 0 a 10")
+   fimse
+   se (media<5) entao
+      escreval ("REPROVADO!!")
+      escreval ("media final igual a:", media)
+               senao
+                    escreval ("APROVADO!!!")
+                    escreval ("media final igual a:", media)
+   fimse
+
+Fimalgoritmo
+---------------------------------------------------------------------
+3)d)
+Algoritmo "semnome"
+
+Var
+
+  n1, n2, n3, n4, media, exame, mdex : real
+  
+Inicio
+
+   escreval ("quanto você tirou na primeira prova?")
+            leia (n1)
+   escreval ("quanto você tirou na segunda prova?")
+            leia (n2)
+   escreval ("quanto você tirou na terceira prova?")
+            leia (n3)
+   escreval ("quanto você tirou na quarta prova?")
+            leia (n4)
+   se ((n1<11) e (n1>-1) e (n2<11) e (n2>-1) e (n3<11) e (n3>-1) e (n4<11) e (n4>-1))  entao
+          media<- (n1 + n2 + n3 + n4)/4)
+      senao
+           escreval ("reinicie o programa e utilize apenas números de 0 a 10")
+   fimse
+   se ((n1<11) e (n1>-1) e (n2<11) e (n2>-1) e (n3<11) e (n3>-1) e (n4<11) e (n4>-1))  entao
+      se (media>=7) entao
+         escreval ("APROVADO!!!")
+                  escreval ("media final igual a:", media)
+                           senao
+                                escreval ("qual a nota do exame?")
+                                         leia (exame)
+                                              se ((exame>10) e (exame<1)) entao
+                                                 escreval ("reinicie o programa e utilize apenas números de 0 a 10")
+                                                          senao
+                                                          mdex<- (exame + media)/2
+                                                                 se (mdex<5) entao
+                                                                    escreval ("Reprovado No Exame")
+                                                                    escreval ("media final igual a:", mdex)
+                                                                             senao
+                                                                                  escreval ("aprovado no exame!")
+                                                                                  escreval ("media final igual a:", mdex)                                
+
+
+fimse
+                      fimse
+
+  	 fimse
+   fimse
+fimalgoritimo
+------------------------------------------------------------------------------
+3)e) NÃO FEITO
+------------------------------------------------------------------------------
+3)f)
+
+Algoritmo "semnome"
+
+
+Var
+
+a, b, c: inteiro
+
+Inicio
+
+      escreval ("escolha um número")
+               leia (a)
+      escreval ("escolha outro número")
+               leia (b)
+      escreval ("escolha mais um número")
+               leia (c)
+      se ((a>b) e (b>c)) entao
+         escreval ("os números em ordem crescente são: ", c, b, a)
+      senao
+           se ((a>c) e (c>b)) entao
+              escreval ("os números em ordem crescente são: ", b, c, a)
+           senao
+                se ((b>a) e (a>c)) entao
+                   escreval ("os números em ordem crescente são: ", c, a, b)
+                senao
+                     se ((c>a) e (a>b)) entao
+                        escreval ("os números em ordem crescente são: ", b, a, c)
+                     senao
+                          se ((c>b) e (b>a)) entao
+                             escreval ("os números em ordem crescente são: ", a, b, c)
+                          senao
+                               se ((b>c) e (c>a)) entao
+                                  escreval ("os números em ordem crescente são: ", a, c, b)
+                               senao
+               
+      fimse
+           fimse
+                fimse
+                     fimse
+                          fimse
+                               fimse
+Fimalgoritmo
+---------------------------------------------------------------------------
+3)g)
+
+Algoritmo "semnome"
+
+
+Var
+
+n1, n2, n3, n4: inteiro
+r1, r2, r3, r4, m1, m2, m3, m4: real
+
+Inicio
+
+      escreval ("escolha um número que é divisivel ou nao por 2 e 3")
+               leia (n1)
+      escreval ("escolha outro número que é divisivel ou nao por 2 e 3")
+               leia (n2)
+      escreval ("escolha mais um número que é divisivel ou nao por 2 e 3")
+               leia (n3)
+      escreval ("escolha mais outro número que é divisivel ou nao por 2 e 3")
+               leia (n4)
+      r1<- (n1%2)
+      m1<- (n1%3)
+      r2<- (n2%2)
+      m2<- (n2%3)
+      r3<- (n3%2)
+      m3<- (n3%3)
+      r4<- (n4%2)
+      m4<- (n4%3)
+      escreval ("esses sao os numeros divisiveis por 2 e 3")
+      se ((r1=0) e (m1=0)) entao
+         escreval (n1)
+      fimse
+      se ((r2=0) e (m2=0)) entao
+         escreval (n2)
+      fimse
+      se ((r3=0) e (m3=0)) entao
+         escreval (n3)
+      fimse
+      se ((r4=0) e (m4=0)) entao
+         escreval (n4)
+      fimse
+      
+Fimalgoritmo
+---------------------------------------------------------------------------
+3)h)
+Algoritmo "semnome"
+
+
+Var
+
+n1, n2, n3, n4: inteiro
+r1, r2, r3, r4, m1, m2, m3, m4: real
+
+Inicio
+
+      escreval ("escolha um número que é divisivel ou nao por 2 e 3")
+               leia (n1)
+      escreval ("escolha outro número que é divisivel ou nao por 2 e 3")
+               leia (n2)
+      escreval ("escolha mais um número que é divisivel ou nao por 2 e 3")
+               leia (n3)
+      escreval ("escolha mais outro número que é divisivel ou nao por 2 e 3")
+               leia (n4)
+      r1<- (n1%2)
+      m1<- (n1%3)
+      r2<- (n2%2)
+      m2<- (n2%3)
+      r3<- (n3%2)
+      m3<- (n3%3)
+      r4<- (n4%2)
+      m4<- (n4%3)
+      escreval ("esses sao os numeros divisiveis por 2")
+      se (r1=0) entao
+         escreval (n1)
+      fimse
+      se (r2=0) entao
+         escreval (n2)
+      fimse
+      se (r3=0) entao
+         escreval (n3)
+      fimse
+      se (r4=0) entao
+         escreval (n4)
+      fimse
+      escreval ("esses sao os numeros divisiveis por 3")
+       se (m1=0) entao
+         escreval (n1)
+      fimse
+      se (m2=0) entao
+         escreval (n2)
+      fimse
+      se (m3=0) entao
+         escreval (n3)
+      fimse
+      se (m4=0) entao
+         escreval (n4)
+      fimse
+
+Fimalgoritmo
+---------------------------------------------------------------------
+3)i)
+Algoritmo "semnome"
+
+
+Var
+
+a, b, c, d, f: inteiro
+
+Inicio
+
+      escreval ("escolha um número")
+               leia (a)
+      escreval ("escolha outro número")
+               leia (b)
+      escreval ("escolha mais um número")
+               leia (c)
+      escreval ("escolha mais um número")
+               leia (d)
+      escreval ("escolha outro número")
+               leia (f)
+      se ((a>b) e (a>c) e (a>d) e (a>f)) entao
+         escreval ("O maior valor informado foi:", a)
+      senao
+           se ((b>a) e (b>c) e (b>d) e (b>f)) entao
+              escreval ("O maior valor informado foi:", b)
+           senao
+                se ((c>a) e (c>b) e (c>d) e (c>f)) entao
+                   escreval ("O maior valor informado foi:", c)
+                senao
+                     se ((d>a) e (d>b) e (d>c) e (d>f)) entao
+                        escreval ("O maior valor informado foi:", d)
+                     senao
+                          se ((f>a) e (f>b) e (f>c) e (f>d)) entao
+                             escreval ("O maior valor informado foi:", f)
+                          senao
+      fimse
+           fimse
+                fimse
+                     fimse
+                          fimse
+      se ((a<b) e (a<c) e (a<d) e (a<f)) entao
+         escreval ("O menor valor informado foi:", a)
+      senao
+           se ((b<a) e (b<c) e (b<d) e (b<f)) entao
+              escreval ("O menor valor informado foi:", b)
+           senao
+                se ((c<a) e (c<b) e (c<d) e (c<f)) entao
+                   escreval ("O menor valor informado foi:", c)
+                senao
+                     se ((d<a) e (d<b) e (d<c) e (d<f)) entao
+                        escreval ("O menor valor informado foi:", d)
+                     senao
+                          se ((f<a) e (f<b) e (f<c) e (f<d)) entao
+                             escreval ("O menor valor informado foi:", d)
+                          senao
+      fimse
+           fimse
+                fimse
+                     fimse
+                          fimse
+Fimalgoritmo
+-----------------------------------------------------------------------------------
+3)j)
+Algoritmo "semnome"
+Var
+
+a : inteiro
+
+Inicio
+
+      escreval ("escolha um número")
+               leia (a)
+      se (a mod 2 = 0) entao
+           escreva("O número ", a, " é par!")
+           senao
+                escreva("O número ", a, " é ímpar!")
+      fimse
+
+Fimalgoritmo
+--------------------------------------------------------------------------------------
+3)k)
+Algoritmo "semnome"
+
+
+Var
+
+a : inteiro
+
+Inicio
+
+      escreval ("escolha um número")
+               leia (a)
+      se ((a<10) e (a>-1)) entao
+         escreval("0 valor está na faixa permitida")
+         senao
+              escreval("0 valor está fora da faixa permitida")
+      fimse
+
+Fimalgoritmo
+--------------------------------------------------------------------------------------
+3)l)
+Algoritmo "semnome"
+
+Var
+
+a : inteiro
+
+Inicio
+      escreval ("escolha um número")
+               leia (a)
+      se nao(a>3) entao
+         escreval("o número", a," não é maior do que 3")
+         senao
+         escreval ("o número", a," é maior do que 3")
+      fimse
+Fimalgoritmo
+--------------------------------------------------------------------------------
+3)m)
+Algoritmo "semnome"
+
+Var
+
+sexo : inteiro
+nome :  caractere
+
+Inicio
+      escreval ("Qual o seu nome?")
+               leia (nome)
+      escreval ("Se você for homem digite 1,")
+      escreval ("se for mulher digite um numero diferente de 1")
+               leia (sexo)
+      se (sexo = 1) entao
+         escreval ("lmo.Sr. ", nome)
+         senao
+              escreval ("Ilma.Sra. ", nome)
+      fimse
+Fimalgoritmo
+-----------------------------------------------------------------------------
+lista 1 do 2° bimestre
+
+a) 
+algoritmo "semnome"
+var num1,num2:real
+inicio
+num1 <- 14
+repita
+  num1 <- num1+1
+  num2 <- num1*num1
+  escreval (num1," ao quadrado =",num2)
+ate (num1 = 200)
+fimalgoritmo
+
+---------
+
+algoritmo "semnome"
+var num1,num2:inteiro
+inicio
+  para num1 de 15 ate 199 faca
+  num1 <- num1+1
+  num2 <- num1*num1
+  escreval (num1," ao quadrado =",num2)
+  fimpara
+  
+Fimalgoritmo
+
+---------
+
+algoritmo "semnome"
+var num1,num2:inteiro
+inicio
+num1<- 14
+  enquanto (num1<200) faca
+  num1 <- num1+1
+  num2 <- num1*num1
+  escreval (num1," ao quadrado =",num2)
+  fimenquanto
+
+Fimalgoritmo
+------------------------------------------------------------------
+
+b)
+algoritmo "semnome"
+var num1,contador,multi:inteiro
+inicio
+contador<- 0
+escreval("digite um numero: ")
+leia(num1)
+enquanto contador < 10 faca
+         contador<- contador + 1
+         multi <- contador * num1
+         
+         Escreval(num1," x ", contador," = ",multi)
+fimenquanto
+fimalgoritmo
+
+---------------
+
+algoritmo "semnome"
+var num1,contador,multi:inteiro
+inicio
+contador<- 0
+escreval("digite um numero: ")
+leia(num1)
+para contador de 1 ate 9 faca
+         contador<- contador + 1
+         multi <- contador * num1
+
+         Escreval(num1," x ", contador," = ",multi)
+fimpara
+fimalgoritmo
+
+--------------
+
+algoritmo "semnome"
+var num1,contador,multi:inteiro
+inicio
+contador<- 0
+escreval("digite um numero: ")
+leia(num1)
+repita   contador < 10 faca
+         contador<- contador + 1
+         multi <- contador * num1
+         Escreval(num1," x ", contador," = ",multi)
+ate (contador > 9)
+fimalgoritmo
+---------------------------------------------------------------------
+
+c) 
+algoritmo "semnome"
+Var
+numero, soma, index : inteiro
+
+Inicio
+   numero <- 1
+   index <- 2
+   escreva (numero, " + ")
+   soma <- numero + index
+   enquanto (index < 101) faca
+            numero <- numero + 1
+            index <- index + 1
+            escreva (numero, " + ")
+            soma <- soma + index
+   fimenquanto
+   escreva ("A soma dos inteiros de 1 à 100 é: ", soma)
+Fimalgoritmo
+
+--------------
+
+algoritmo "semnome"
+Var
+numero, soma, index : inteiro
+
+Inicio
+   numero <- 1
+   index <- 2
+   escreva (numero, " + ")
+   soma <- numero + index
+       para index de 1 ate 99 faca
+            numero <- numero + 1
+            index <- index + 1
+            escreva (numero, " + ")
+            soma <- soma + index
+   fimpara
+   escreva ("A soma dos inteiros de 1 à 100 é: ", soma)
+Fimalgoritmo
+
+-------------
+
+
+algoritmo "semnome"
+Var
+numero, soma, index : inteiro
+
+Inicio
+   numero <- 1
+   index <- 2
+   escreva (numero, " + ")
+   soma <- numero + index
+   repita   (index < 101)
+            numero <- numero + 1
+            index <- index + 1
+            escreva (numero, " + ")
+            soma <- soma + index
+   ate (index > 100)
+   escreva ("A soma dos inteiros de 1 à 100 é: ", soma)
+Fimalgoritmo
+-----------------------------------------------------------------------
+
+
+d)
+Algoritmo "semnome"
+Var
+i,numero,soma : Inteiro
+inicio
+Escreva("Deseja somar até qual número: ")
+leia(numero)
+soma <- 0
+Escreva("Pares: ")
+Para i de 1 ate numero faca
+     se (i mod 2 = 0) entao
+        Escreva("(",i,")")
+        soma <- soma + i
+     fimse
+fimpara
+Escreval(" ")
+Escreval("O resultado da soma dos pares é: ", soma)
+Fimalgoritmo
+-------------
+
+Algoritmo "semnome"
+Var
+i,numero,soma : Inteiro
+inicio
+Escreva("Deseja somar até qual número: ")
+leia(numero)
+soma <- 0
+Escreva("Pares: ")
+enquanto i < numero faca
+i<-i+1
+     se (i mod 2 = 0) entao
+        Escreva("(",i,")")
+        soma <- soma + i
+     fimse
+fimenquanto
+Escreval(" ")
+Escreval("O resultado da soma dos pares é: ", soma)
+Fimalgoritmo
+
+--------------
+
+
+Algoritmo "semnome"
+Var
+i,numero,soma : Inteiro
+inicio
+Escreva("Deseja somar até qual número: ")
+leia(numero)
+soma <- 0
+Escreva("Pares: ")
+repita i < numero faca
+i<-i+1
+     se (i mod 2 = 0) entao
+        Escreva("(",i,")")
+        soma <- soma + i
+     fimse
+ate (i > numero)
+Escreval(" ")
+Escreval("O resultado da soma dos pares é: ", soma)
+Fimalgoritmo
+
+-----------------------------------------
+
+
+e)
+algoritmo "semnome"
+var
+i: inteiro
+inicio
+escreval("lista de números ímpares entre 0 e 20")
+enquanto i < 20 faca
+i<-i+1
+   se i mod 2 = 1 entao
+   escreval( " O número ", i , " é impar " )
+   fimse
+fimenquanto
+fimalgoritmo
+
+-----------
+
+algoritmo "semnome"
+var
+i: inteiro
+inicio
+escreval("lista de números ímpares entre 0 e 20")
+para i de 1 ate 20 faca
+   se i mod 2 = 1 entao  // se o número for impar o resto é 1
+        escreval( " O número ", i , " é impar " )
+   fimse
+fimpara
+fimalgoritmo
+
+------------
+
+algoritmo "semnome"
+var
+            i: inteiro
+inicio
+escreval("lista de números ímpares entre 0 e 20")
+repita i < 20 faca
+i<-i+1
+   se i mod 2 = 1 entao
+   escreval( " O número ", i , " é impar " )
+   fimse
+   ate (i > 19)
+fimalgoritmo
+------------------------------------------------------------
+
+f)
+Algoritmo "semnome"
+var valor : inteiro
+inicio
+ valor <- 200
+   enquanto valor>1 faca
+      se ((valor%4) <> 0) entao
+          valor <- valor - 1
+      senao
+         se (valor < 201) entao
+                escreva (valor)
+         fimse
+         valor <- valor - 4
+      fimse
+fimenquanto
+fimalgoritmo
+
+------------
+
+
+Algoritmo "semnome"
+var valor : inteiro
+inicio
+ valor <- 200
+   para valor de 1 ate 200 faca
+      se ((valor%4) <> 0) entao
+          valor <- valor - 1
+      senao
+         se (valor < 201) entao
+                escreva (valor)
+         fimse
+         valor <- valor - 4
+      fimse
+fimpara
+fimalgoritmo
+
+
+------------
+
+
+
+
+Algoritmo "semnome"
+var valor : inteiro
+inicio
+ valor <- 200
+   repita valor>1 faca
+      se ((valor%4) <> 0) entao
+          valor <- valor - 1
+      senao
+         se (valor < 201) entao
+                escreva (valor)
+         fimse
+         valor <- valor - 4
+      fimse
+ate (valor <1)
+fimalgoritmo
+----------------------------------------------------
+
+g)
+ algoritmo "semnome"
+var num1,num2,cont,res:inteiro
+inicio
+num1 <- 0
+escreva ("Digite o valor da base: ")
+leia(num1)
+escreva ("Digite o valor do expoente: ")
+leia(num2)
+res <-1
+         enquanto (cont<num2) faca
+         res<-res*num1
+         cont<-cont+1
+         fimenquanto
+         escreval (num1," ^", num2,"=",res)
+fimalgoritmo
+-----------------
+
+algoritmo "semnome"
+var num1,num2,cont,res:inteiro
+inicio
+num1 <- 0
+escreva ("Digite o valor da base: ")
+leia(num1)
+escreva ("Digite o valor do expoente: ")
+leia(num2)
+res <-1
+         para cont de 1 ate num2 faca
+         res<-res*num1
+         cont<-cont+1
+         fimpara
+         escreval (num1," ^", num2,"=",res)
+fimalgoritmo
+---------------------
+
+algoritmo "semnome"
+var
+num1,num2,cont,res :inteiro
+inicio
+
+num1 <- 0
+     escreva ("Digite o valor da base: ")
+             leia(num1)
+     escreva ("Digite o valor do expoente: ")
+             leia(num2)
+     res <-1
+         repita (cont < num2) faca
+            res<- res*num1
+            cont<-cont+1
+         ate (cont >= num2)
+         escreval (num1,"^", num2,"=",res)
+fimalgoritmo
+
+------------------------------------------------------------
+
+H) 
+algoritmo "semnome"
+var num1,num2,cont,res:inteiro
+inicio
+num1 <- 0
+escreva ("Digite o valor da base: ")
+leia(num1)
+escreva ("Digite o valor do expoente: ")
+leia(num2)
+res <-1
+         enquanto (cont<num2) faca
+         res<-res*num1
+         cont<-cont+1
+
+
+
+         fimenquanto
+         escreval (num1," ^", num2,"=",res)
+fimalgoritmo
+-------------------
+
+algoritmo "semnome"
+var num1,num2,cont,res:inteiro
+inicio
+num1 <- 0
+escreva ("Digite o valor da base: ")
+leia(num1)
+escreva ("Digite o valor do expoente: ")
+leia(num2)
+res <-1
+         para cont de 1 ate num2 faca
+         res<-res*num1
+         cont<-cont+1
+
+
+
+         fimpara
+         escreval (num1," ^", num2,"=",res)
+fimalgoritmo
+
+----------------
+
+algoritmo "semnome"
+var
+num1,num2,cont,res :inteiro
+inicio
+
+num1 <- 0
+     escreva ("Digite o valor da base: ")
+             leia(num1)
+     escreva ("Digite o valor do expoente: ")
+             leia(num2)
+     res <-1
+         repita (cont < num2) faca
+            res<- res*num1
+            cont<-cont+1
+         ate (cont >= num2)
+         escreval (num1,"^", num2,"=",res)
+fimalgoritmo
+
+-----------------------------------------------------
+
+J)
+ algoritmo "semnome"
+var fahrenheit:inteiro celsius: real
+inicio
+fahrenheit <- 1
+enquanto fahrenheit <= 100 faca
+         celsius <- 5/9*(fahrenheit-32)
+escreval (fahrenheit," graus fahrenheit é = ", celsius, " graus celsius")
+fahrenheit <- fahrenheit + 1
+fimenquanto
+Fimalgoritmo
+
+---------------
+
+algoritmo "semnome"
+var fahrenheit:inteiro celsius: real
+inicio
+fahrenheit <- 1
+para fahrenheit de 1 ate 100 faca
+         celsius <- 5/9*(fahrenheit-32)
+escreval (fahrenheit," graus fahrenheit é = ", celsius, " graus celsius")
+fahrenheit <- fahrenheit + 1
+fimpara
+Fimalgoritmo
+
+--------------
+
+algoritmo "semnome"
+var fahrenheit:inteiro celsius: real
+inicio
+fahrenheit <- 1
+repita   fahrenheit <= 100 faca
+         celsius <- 5/9*(fahrenheit-32)
+escreval (fahrenheit," graus fahrenheit é = ", celsius, " graus celsius")
+fahrenheit <- fahrenheit + 1
+ate (fahrenheit > 100)
+Fimalgoritmo
+-----------------------------------------------------------------
+
+ K)
+ algoritmo "semnome"
+var
+quadrado: real
+soma: real
+grao: real
+inicio
+quadrado <-1
+soma<-quadrado
+grao<-2
+enquanto quadrado < 64 faca
+soma <- soma+grao
+quadrado<- quadrado+1
+grao<-grao*2
+fimenquanto
+Escreval ("A soma dos numero de grão de trigo é:" , soma)
+
+fimalgoritmo
+---------------
+
+algoritmo "semnome"
+var
+quadrado: real
+soma: real
+grao: real
+inicio
+quadrado <-1
+soma<-quadrado
+grao<-2
+repita quadrado < 64 faca
+soma <- soma+grao
+quadrado<- quadrado+1
+grao<-grao*2
+ate (quadrado > 63)
+Escreval ("A soma dos numero de grão de trigo é:" , soma)
+
+fimalgoritmo
+
+---------------
+
+algoritmo "semnome"
+var
+quadrado: inteiro
+soma: real
+grao: real
+inicio
+quadrado <-1
+soma<-quadrado
+grao<-2
+para quadrado de 1 ate 63 faca
+soma <- soma+grao
+quadrado<- quadrado+1
+grao<-grao*2
+fimpara
+Escreval ("A soma dos numero de grão de trigo é:" , soma)
+
+fimalgoritmo
+-----------------------------------------------------------------------
+
+
+L) Não Feito
+
+M) Algoritmo "semnome"
+Var
+   n, soma, i:inteiro
+Inicio
+  soma<-0
+  para i de 1 ate 10 faca
+       escreva("Digite um numero: ")
+       leia(n)
+       soma<-soma+n
+  fimpara
+  escreval("Soma total dos valores: ",soma)
+  escreval("Média aritmética dos valores lidos: ",soma/10)
+Fimalgoritmo
+----------------------------
+Algoritmo "semnome"
+Var
+i,n,soma : Inteiro
+inicio
+      soma <- 0
+enquanto i < 10 faca
+         i<-i+1
+       escreva("Digite um numero: ")
+       leia(n)
+       soma<-soma+n
+fimenquanto
+escreval("Soma total dos valores: ",soma)
+  escreval("Média aritmética dos valores lidos: ",soma/10)
+Fimalgoritmo
+-----------------------------
+Algoritmo "semnome"
+Var
+i,n,soma : Inteiro
+inicio
+      soma <- 0
+repita i < 10 faca
+         i<-i+1
+       escreva("Digite um numero: ")
+       leia(n)
+       soma<-soma+n
+       ate (i>9)
+escreval("Soma total dos valores: ",soma)
+  escreval("Média aritmética dos valores lidos: ",soma/10)
+Fimalgoritmo
+
+-------------------------------------------------------------------
+
+
+n) 
+algoritmo "semnome"
+var
+num, cont: inteiro
+soma, media: real
+inicio
+cont <- 0
+soma <- 0
+escreva ("digite os numeros, ao digitar um numero negativo,a soma sera terminada: ")
+leia (num)
+enquanto (num > 0) faca
+cont <- cont + 1
+soma <- soma + num
+leia (num)
+fimenquanto
+se (cont > 0) entao
+media <- soma / cont
+escreval ("Média: ", media)
+senao
+escreval ("Nenhum valor informado")
+fimse
+fimalgoritmo
+
+----------------------------
+
+algoritmo "semnome"
+var
+num, cont: inteiro
+soma, media: real
+inicio
+cont <- 0
+soma <- 0
+escreva ("digite os numeros, ao digitar um numero negativo,a soma sera terminada: ")
+leia (num)
+repita (num > 0) faca
+cont <- cont + 1
+soma <- soma + num
+leia (num)
+ate (num <0 )
+se (cont > 0) entao
+media <- soma / cont
+escreval ("Média: ", media)
+senao
+escreval ("Nenhum valor informado")
+fimse
+fimalgoritmo
+
+---------------------
+
+algoritmo "semnome"
+var
+num, cont: inteiro
+soma, media: real
+inicio
+cont <- 0
+soma <- 0
+escreva ("digite os numeros, ao digitar um numero negativo,a soma sera terminada: ")
+leia (num)
+enquanto (num > 0) faca
+cont <- cont + 1
+soma <- soma + num
+leia (num)
+fimenquanto
+se (cont > 0) entao
+media <- soma / cont
+escreval ("Média: ", media)
+senao
+escreval ("Nenhum valor informado")
+fimse
+fimalgoritmo
+
+
+
+
+O) 
+algoritmo "semnome"
+var
+i,j, fat: inteiro
+inicio
+para i de 1 ate 10 faca
+se (i%2 <> 0) entao
+fat <- 1
+j <- 1
+enquanto (j <= i) faca
+fat <- fat * j
+j <- j + 1
+fimenquanto
+fimse
+fimpara
+escreval ("Os valores da fatorial dos valores impares de 1 a 10 e: ",fat)
+fimalgoritmo
+-------------------------------------------------------------------------------------------------------------
+algoritmo "semnome"
+var
+i,j, fat: inteiro
+inicio
+para i de 1 ate 10 faca
+se (i%2 <> 0) entao
+fat <- 1
+j <- 1
+repita (j <= i) faca
+fat <- fat * j
+j <- j + 1
+ate (j > i)
+fimse
+fimpara
+escreval ("Os valores da fatorial dos valores impares de 1 a 10 e: ",fat)
+fimalgoritmo
+
+
+P) 
+algoritmo "semnome"
+var
+par,cont,par1:inteiro
+inicio
+par <- 50
+cont <- 70
+enquanto cont <= 70 faca
+se(cont mod 2 = 0)então
+par <- cont + par
+par1 <- cont
+escreval("",par1)
+fimse
+cont <- cont + 1
+fimenquanto
+escreva("A soma total dos pares é :",par)
+fimalgoritmo
+------------------------------------------------------------------------------------
+algoritmo "semnome"
+var
+par,cont,par1:inteiro
+inicio
+par <- 50
+cont <- 70
+para cont de 50 ate 70 faca
+se(cont mod 2 = 0)então
+par <- cont + par
+par1 <- cont
+escreval("",par1)
+fimse
+cont <- cont + 1
+fimpara
+escreva("A soma total dos pares é :",par)
+fimalgoritmo
+----------------------------------------------------------------------------------
+algoritmo "semnome"
+var
+par,cont,par1:inteiro
+inicio
+par <- 50
+cont <- 70
+repita cont <= 70 faca
+se(cont mod 2 = 0)então
+par <- cont + par
+par1 <- cont
+escreval("",par1)
+fimse
+cont <- cont + 1
+ate (cont > 70)
+escreva("A soma total dos pares é :",par)
+fimalgoritmo
+
+
+Q) 
+algoritmo "semnome"
+var
+larg, comp, area, total,nome: real
+continua: caracter
+inicio
+total <- 0
+continua <- "SIM"
+enquanto (continua <> "nao") faca
+escreva ("Digite o comodo da casa, largura, e comprimento: ")
+leia (nome)
+leia (larg)
+leia (comp)
+area <- larg * comp
+total <- total + area
+escreval(nome, larg, comp, area)
+leia (continua)
+fimenquanto
+escreval ("Área total: ", total)
+fimalgoritmo
+--------------------------------------------------------------------------------------------------
+algoritmo "semnome"
+var
+larg, comp, area, total,nome: real
+continua: caracter
+inicio
+total <- 0
+continua <- "SIM"
+repita (continua <> "nao") faca
+escreva ("Digite o comodo da casa, largura, e comprimento: ")
+leia (nome)
+leia (larg)
+leia (comp)
+area <- larg * comp
+total <- total + area
+escreval(nome, larg, comp, area)
+leia (continua)
+ate (continua = "nao")
+escreval ("Área total: ", total)
+fimalgoritmo
+----------------------------------------------------------------------------
+algoritmo "semnome"
+var
+larg, comp, area, total,nome: real
+continua: caracter
+inicio
+total <- 0
+continua <- "SIM"
+para continua ate "nao" faca
+escreva ("Digite o comodo da casa, largura, e comprimento: ")
+leia (nome)
+leia (larg)
+leia (comp)
+area <- larg * comp
+total <- total + area
+escreval(nome, larg, comp, area)
+leia (continua)
+fimpara
+escreval ("Área total: ", total)
+fimalgoritmo
+
+R) 
+algoritmo "semnome"
+var
+MAIOR, MENOR, N, X:inteiro
+inicio
+Escreva ("Digite um valor:")
+Leia(N)
+SE (N < 0)então
+SENAO
+MAIOR <- N
+MENOR <- N
+ENQUANTO (N mod 2=0) Faça
+Escreva ("Digite um Valor:")
+Leia(N)
+SE (N > MAIOR) então
+MAIOR <-N
+fimse
+SE (N < MENOR) então
+MENOR <-N
+fimse
+Fimenquanto
+Escreval ("o maior e :",MAIOR)
+Escreval ("o menor e :",MENOR)
+fimse
+fimalgoritmo
+-----------------
+
+algoritmo "semnome"
+var
+MAIOR, MENOR, N, X:inteiro
+inicio
+Escreva ("Digite um valor:")
+Leia(N)
+SE (N < 0)então
+SENAO
+MAIOR <- N
+MENOR <- N
+repita (N mod 2=0) Faça
+Escreva ("Digite um Valor:")
+Leia(N)
+SE (N > MAIOR) então
+MAIOR <-N
+fimse
+SE (N < MENOR) então
+MENOR <-N
+fimse
+ate (n > 2)
+Escreval ("o maior e :",MAIOR)
+Escreval ("o menor e :",MENOR)
+fimalgoritmo
+fimse
+
+
+S)
+algoritmo "semnome"
+var
+dividendo, divisor, x: inteiro
+inicio
+x <- 0
+escreva ("Digite o dividendo: ")
+leia (dividendo)
+escreva ("Digite o divisor: ")
+leia (divisor)
+enquanto (dividendo > divisor) faca
+x <- x + 1
+dividendo <- dividendo - divisor
+fimenquanto
+escreval("Resultado: ", x)
+fimalgoritmo
+----------------------------------------------------------------------------------------
+algoritmo "semnome"
+var
+dividendo, divisor, x: inteiro
+inicio
+x <- 0
+escreva ("Digite o dividendo: ")
+leia (dividendo)
+escreva ("Digite o divisor: ")
+leia (divisor)
+para dividendo de x ate divisor faca
+x <- x + 1
+dividendo <- dividendo - divisor
+fimpara
+escreval("Resultado: ", x)
+fimalgoritmo
+---------------------------------------------------------------------------------------------------------------------------
+algoritmo "semnome"
+var
+dividendo, divisor, x: inteiro
+inicio
+x <- 0
+escreva ("Digite o dividendo: ")
+leia (dividendo)
+escreva ("Digite o divisor: ")
+leia (divisor)
+repita (dividendo > divisor) faca
+x <- x + 1
+dividendo <- dividendo - divisor
+ate (dividendo < divisor)
+escreval("Resultado: ", x)
+fimalgoritmo
