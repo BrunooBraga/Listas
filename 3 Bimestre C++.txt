@@ -1,0 +1,1501 @@
+Lista 1
+
+A)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[9];
+	for (int i=0; i<10; i++){
+			printf ("Digite os numeros:",i);
+			scanf ("%d",&m1[i]);
+	}
+		printf("\n os numeros digitados sao: \n");
+	
+	for(int k=0; k<10; k++){
+			printf("\n");	
+			printf("\t %d",m1[k]);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+B)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int x;
+int main()
+
+{
+	int m1[7];
+	int m2[7];
+	for (int i=0; i<8; i++){
+			printf ("Digite os numeros:",i);
+			scanf ("%d",&m1[i]);
+	}
+		printf("\n os numeros da matriz a sao: \n");
+	
+	for(int k=0; k<10; k++){
+			printf("\n");	
+			printf("\t %d",m1[k]*3);
+	}
+	for (int i=0; i<8; i++){
+			printf ("%d",m2[i]=m1[i]*3);
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+C)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[19];
+	int m2[19];
+	int m3[19];
+	for (int i=0; i<20; i++){
+			printf ("Digite os numeros para matriz a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<20; i++){
+			printf ("Digite os numeros para matriz b:",i);
+			scanf ("%d",&m2[i]);
+	}
+		printf("\n os numeros digitados sao: \n");
+	
+	for(int k=0; k<20; k++){
+			printf("\n");	
+			printf("\t %d",m3[k]=m1[k]-m2[k]);
+	}
+}
+
+
+
+D)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[14];
+	int m2[14];
+	for (int i=0; i<15; i++){
+			printf ("Digite os numeros para matriz a:",i);
+			scanf ("%d",&m1[i]);
+	}
+
+	for(int k=0; k<15; k++){
+			printf("\n");	
+			printf("\t %d",m2[k]=m1[k]*2*2);
+	}
+}
+E)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <iostream>
+float c, f;
+using namespace std;
+int main()
+
+{
+	int m1[14];
+	int m2[14];
+	for (int i=0; i<15; i++){
+			printf ("Digite os numeros para matriz a:",i);
+			scanf ("%d",&m1[i]);
+	}
+
+	for(int k=0; k<15; k++){
+			printf("\n");	
+			long fat = 1;
+			fat = fat * k;
+			printf("\t %d",m2[k]=m1[k]*2*2);
+	}
+}
+
+
+
+
+F)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[14];
+	int m2[14];
+	int m3[29];
+	for (int i=0; i<15; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<15; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz c: \n");			
+	for(int k=0; k<30; k++){
+			printf("\n");	
+			for (int l=0; l<30; l++){
+			printf("\t %d",m3[k]=m1[k]+m2[l]);
+		}
+	}
+}
+
+
+
+
+
+
+
+G)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[19];
+	int m2[29];
+	int m3[49];
+	for (int i=0; i<20; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<30; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz c: \n");			
+	for(int k=0; k<50; k++){
+			printf("\n");	
+			for (int l=0; l<50; l++){
+			printf("\t %d",m3[k]=m1[k]+m2[l]);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+H)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[19];
+	int m2[19];
+	for (int i=0; i<20; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<20; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz c: \n");			
+	for(int k=0; k<50; k++){
+			printf("\n");	
+			for (int l=0; l<50; l++){
+			printf("\t %d",);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+I)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[4];
+	int m2[4];
+	int m3[4];
+	for (int i=0; i<5; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<5; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+			for (int i=0; i<5; i++){
+			printf ("Digite os numeros para c:",i);
+			scanf ("%d",&m3[i]);
+}
+	printf("\n matriz d: \n");
+	for(int k=0; k<5; k++){
+			printf("\n");	
+			for (int l=0; l<5; l++){
+			printf("\t %d",m1[4]+m2[4]+m3[4]*3);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+J)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <iostream>
+float c, f;
+using namespace std;
+int main()
+
+{
+	int m1[14];
+	int m2[14];
+	for (int i=0; i<15; i++){
+			printf ("Digite os numeros para matriz a:",i);
+			scanf ("%d",&m1[i]);
+	}
+	printf("\n a soma dos numeros anteriores e: \n");
+	for(int k=0; k<15; k++){
+			printf("\n");	
+			long fat = 1;
+			fat = fat * k;
+			printf("\t %d",m1[14]+m2[14]);
+	}
+}
+
+
+
+
+
+
+
+
+
+K)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <iostream>
+float c, f;
+using namespace std;
+int main()
+
+{
+	int m1[9];
+	int m2[9];
+	for (int i=0; i<10; i++){
+			printf ("digite um numero positivo para a matriz a:",i);
+			scanf ("%d",&m1[i]);
+	}
+	printf("\n a soma dos numeros anteriores de e: \n");
+	for(int k=0; k<15; k++){
+			printf("\n");	
+			long fat = 1;
+			fat = fat * k;
+			printf("\t %d",m1[14]);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+L)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <iostream>
+float c, f;
+int main()
+
+{
+	int m1[9];
+	int m2[9];
+	for (int i=0; i<10; i++){
+			printf ("digite um numero para a matriz a:",i);
+			scanf ("%d",&m1[i]);
+	}
+	printf("\n matriz a: \n");
+	for(int k=0; k<10; k++){
+			printf("\n");	
+			printf("\t %d",m1[k]);
+	}
+	printf("\n matriz b: \n");
+	for(int k=0; k<10; k++){
+			printf("\n");	
+			printf("\t %d",m1[k]/2);
+	}
+}
+
+
+M)
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+int m1 [9];
+int main() 
+{
+    cout << "Digite o numero da tabuada que voce deseja: " << endl;
+    int n = 0;
+    cin >> n;
+    for(int i = 1; i<=10; i++){
+        cout << i << " x " << n << " = " << i*n << endl;
+    }
+    system("pause");
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+P)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[11];
+	int m2[11];
+	for (int i=0; i<12; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<12; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz A: \n");
+	for(int k=0; k<12; k++){
+			printf("\n");	
+			if(k%2==1
+)
+			printf("\t %d",m1[k]/2);
+	}
+		printf("\n matriz B: \n");
+	for(int k=0; k<12; k++){
+			printf("\n");	
+			printf("\t %d",m2[k]);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+Q)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[14];
+	int m2[14];
+	for (int i=0; i<15; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<12; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz A: \n");
+	for(int k=0; k<12; k++){
+			printf("\n");	
+			if(k%2==0)
+			printf("\t %d",m1[k]/2);
+	}
+		printf("\n matriz B: \n");
+	for(int k=0; k<12; k++){
+			printf("\n");	
+			printf("\t %d",m2[k]);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+R)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[5];
+	int m2[5];
+	for (int i=0; i<6; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<6; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz C: \n");
+	for(int k=0; k<12; k++){
+			printf("\n");	
+			if(k%2==1)
+			printf("\t %d",m1[k])+m2[k];4
+	}
+		printf("\n matriz D: \n");
+	for(int k=0; k<12; k++){
+			printf("\n");
+			if(k%2==0)
+			printf("\t %d",m1[k]+m2[k]);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+S)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[5];
+	int m2[5];
+	int m3[5][5];
+	for (int i=0; i<6; i++){
+			printf ("Digite os numeros pares:",i);
+			if(i%2==0);
+			else;
+			printf("voce digitou um numero impar");
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<6; i++){
+			printf ("Digite os numeros impares:",i);
+			if(i%2==1);
+			else;
+			printf("Digite numeros impares");
+			scanf ("%d",&m2[i]);
+			
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+T)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[9];
+	int m2[9];
+	int m3[19];
+	for (int i=0; i<10; i++){
+			printf ("Digite numeros divisiveis por 2 e por 3:",i);
+			if(i%2==3);
+			else;
+			printf("\n");
+			printf("digite numeros divisiveis por 2 e por 3:");
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<10; i++){
+			printf ("Digite numeros divisiveis por 5:",i);
+			if(i%5==0);
+			else;
+			printf("Digite numeros divisiveis por 5");
+			scanf ("%d",&m2[i]);
+			
+	}
+		printf("\n matriz c: \n");
+	for(int k=0; k<20; k++){
+			printf("\n");	
+			for (int l=0; l<20; l++){
+			printf("\t %d",m1[k]+m2[k]);
+			return 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+V)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[29];
+	for (int i=0; i<30; i++){
+			printf ("Digite os valores para o vetor:\n",i);
+			scanf ("%d",&m1[i]);
+	}
+		printf("\n numeros impares: \n");
+		for(int k=0; k<20; k++){
+			printf("\n");	
+				if (k%2==1)
+			printf("\t %d",m1[k]);
+			else
+			printf("\n Numeros pares: \n");
+	for(int k=0; k<20; k++){
+	printf("\n");	
+		if (k%2==0)
+		printf("\t %d",m1[k]);
+		return 0;
+		
+	}
+		}
+		
+}
+
+
+
+
+W)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[9];
+	int m2[9];
+	int m3[9];
+	
+	for (int i=0; i<10; i++){
+			printf ("Digite o valor do vetor A:\n",i);
+			scanf ("%d",&m1[i]);
+	}
+		printf("\n Digite o valor do vetor B: \n");
+		for(int k=0; k<10; k++){
+			printf("\n");	
+			printf("\t %d",m1[k]);
+			printf("\n : \n");
+			
+	for(int k=0; k<10; k++){
+	printf("\n");	
+		printf("\t %d",m1[k]^m2[k]);
+		return 0;
+		
+	}
+		}
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+X)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[5];
+	int m2[5];
+	for (int i=0; i<6; i++){
+			printf ("Digite os numeros para a:",i);
+			scanf ("%d",&m1[i]);
+	}
+		for (int i=0; i<6; i++){
+			printf ("Digite os numeros para b:",i);
+			scanf ("%d",&m2[i]);
+	}
+	printf("\n matriz C: \n");
+	for(int k=0; k<6; k++){
+			printf("\n");	
+			if(k%2==1)
+			printf("\t %d",m1[k])+m2[k];4
+	}
+			return 0;
+}
+
+
+
+
+
+
+Y)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[14];
+	for (int i=0; i<15; i++){
+			printf ("Digite os numeros:",i);
+			scanf ("%d",&m1[i]);
+	}
+		printf("\n os numeros digitados sao: \n");
+	
+	for(int k=0; k<15; k++){
+			printf("\n");	
+			if(k%2==0)
+			printf("\t %d",m1[k]);
+	}
+}
+Z)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[9];
+	for (int i=0; i<10; i++){
+			printf ("Digite os numeros:",i);
+			scanf ("%d",&m1[i]);
+	}
+		printf("\n os numeros digitados sao: \n");
+	
+	for(int k=0; k<10; k++){
+			printf("\n");	
+			if(k%2==1)
+			printf("\t %d",m1[k]);
+	}
+}
+
+
+
+Lista 2
+A)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[4][2];
+	int m2[4][2];
+	for (int i=0; i<5; i++){
+		for(int j=0; j<3; j++){
+			printf ("Digite os numeros da matriz a[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+		for (int i=0; i<5; i++){
+		for(int j=0; j<3; j++){
+			printf ("Digite os numeros da matriz b[%d][%d]:",i,j);
+			scanf ("%d",&m2[i][j]);
+		
+		}
+	}
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<3; l++){	
+			printf("\t %d",m1[k][l]+m2[k][l]);
+
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+B)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main()
+{
+	int m1[1][7] = {5,3,5,6,8,1,3};
+	int m2[1][7] = {3,6,2,3,5,6,3};
+	
+	for (int i=0; i<1; i++){
+		for(int j=0; j<7; j++){
+		
+		}
+	}
+	
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<1; k++){
+			printf("\n");
+		for (int l=0; l<7; l++){
+			printf("\t %d",m1[k][l]);
+		}
+	}
+	for(int k=0; k<1; k++){
+			printf("\n");
+		for (int l=0; l<7; l++){
+			printf("\t %d",m2[k][l]);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+C)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main()
+{
+	int m1[5][4] = {5,3,5,6,8,1,3,6,3,6,7,8,8,6,4,6,7,2,7,9};
+	
+	for (int i=0; i<5; i++){
+		for(int j=0; j<4; j++){
+			m1 [i][j] = m1[i][j];
+		
+		}
+	}
+	printf("\n matriz: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<4; l++){
+			printf("\t %d, ",m1[k][l]);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+D)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main()
+{
+	int ma[10][1] = {5,3,5,6,8,1,3,6,2,5};
+	int mc[3][2];
+	int fat;
+	
+	for (int i=0; i<10; i++){
+		for(int j=0; j<1; j++){
+		
+		}
+	}
+	
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<2; k++){
+			printf("\n");
+		for (int l=0; l<3; l++){
+			printf("\t %d",ma[k][l]+5);
+		}
+	}
+	
+	for(int k=0; k<2; k++){
+			printf("\n");
+		for (int l=0; l<3; l++){
+			printf("\t %d",ma[k][l]*ma[k][l]);
+		}
+	}
+	for(int k=0; k<2; k++){
+			printf("\n");
+		for (int l=0; l<3; l++){
+			printf("\t %d",ma[k][l]^ma[k][l]);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+E) 
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main()
+{
+	int m1[12][1] = {5,3,5,6,8,1,3,6,9,1,2,3};
+	int m2[12][1] = {3,6,2,3,5,6,3,3,5,6,7,8};
+	int m3[12][2];
+	
+	for (int i=0; i<2; i++){
+		for(int j=0; j<12; j++){
+		
+		}
+	}
+	
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<12; k++){
+			printf("\n coluna [1]");
+		for (int l=0; l<1; l++){
+			printf("\t %d",m1[k][l]*2);
+		}
+	}
+	for(int k=0; k<12; k++){
+			printf("\n coluna [2]");
+		for (int l=0; l<1; l++){
+			printf("\t %d",m2[k][l]-5);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+F)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main()
+{
+	int m1[5][4] = {5,3,5,6,8,1,3,6,9,1,2,3,5,7,1,3,5,6,7,8};
+	
+	for (int i=0; i<5; i++){
+		for(int j=0; j<4; j++){
+		
+		}
+	}
+	
+	printf("\n matriz A: \n");
+	
+	for(int k=0; k<4; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			printf("\t %d",m1[k][l]);
+		}
+	}
+	printf("\n matriz B: \n");
+	for(int k=0; k<4; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			printf("\t %d",m1[k][l]*m1[k][l]);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+G) 
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[5][4] = {20,13,22,12,15,26,63,32,54,64,11,32,17,71,93,75,72,67,78,80};
+	
+	for (int i=0; i<5; i++){
+		for(int j=0; j<4; j++){
+		
+		}
+	}
+	
+	printf("\n Celsius: \n");
+	
+	for(int k=0; k<4; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			printf("\t %d",m1[k][l]);
+		}
+	}
+	printf("\n Fahrenheit : \n");
+	for(int k=0; k<4; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			printf("\t %d",9 * m1[k][l] + 160 / 5);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+H)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main()
+{
+	int m1[5][5] = {5,3,5,6,8,1,3,6,9,1,2,3,5,7,1,3,5,6,7,8,6,5,4,3,2};
+	
+	for (int i=0; i<5; i++){
+		for(int j=0; j<4; j++){
+		
+		}
+	}
+	
+	printf("\n matriz B: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			printf("\t %d",m1[k][l]*3);
+		}
+	}
+	for(int k=0; k<1; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			printf("\t %d",m1[k][l]*2);
+		}
+	}
+	
+}	
+if(i%2==2){
+
+
+
+
+
+
+
+
+i)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[7][7];
+	int m2[7][7];
+	
+	for (int i=0; i<7; i++){
+		for(int j=0; j<7; j++){
+			printf ("Digite os graus celsius[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+	
+	printf("\n Celsius: \n");
+	
+	for(int k=0; k<7; k++){
+			printf("\n");
+		for (int l=0; l<7; l++){
+			printf("\t %d",m1[k][l]);
+		}
+	}
+	printf("\n Fahrenheit : \n");
+	for(int k=0; k<7; k++){
+			printf("\n");
+		for (int l=0; l<7; l++){
+			printf("\t %d",9 * m1[k][l] + 160 / 5);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+k)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[3][3];
+	
+	for (int i=0; i<4; i++){
+		for(int j=0; j<4; j++){
+			printf ("Digite os numeros[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+	
+	printf("\n Soma dos numeros: \n");
+	
+	for(int k=0; k<4; k++){
+			printf("\n");
+		for (int l=0; l<4; l++){
+			printf("\t %d",m1[k][l]+m1[k][l]);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+l)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[3][3];
+	
+	for (int i=0; i<4; i++){
+		for(int j=0; j<4; j++){
+			printf ("Digite os numeros[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+	
+	printf("\n Soma dos numeros: \n");
+	
+	for(int k=0; k<4; k++){
+			printf("\n");
+		for (int l=0; l<4; l++){
+			if (k%2==0){
+			printf("\t %d",m1[k][l]+m1[k][l]);
+			}
+		}
+	}
+	
+}
+m)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[4][4];
+	
+	for (int i=0; i<5; i++){
+		for(int j=0; j<5; j++){
+			printf ("Digite os numeros[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+	
+	printf("\n Soma dos numeros: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){
+			if (k%2==1){
+			printf("\t %d",m1[k][l]+m1[k][l]);
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+n)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[4][4];
+	
+	for (int i=0; i<5; i++){
+		for(int j=0; j<5; j++){
+			printf ("Digite os numeros[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+	
+	printf("\n Numeros pares: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+			if (k%2==0){
+		for (int l=0; l<5; l++){
+			if (l%2==0){
+			printf("\t %d",m1[k][l]);
+			}
+		}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+p)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[9][6];
+	
+	for (int i=0; i<10; i++){
+		for(int j=0; j<7; j++){
+			printf ("Digite os numeros[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+	
+	printf("\n Numeros pares: \n");
+	
+	for(int k=0; k<10; k++){
+			printf("\n");
+			if (k%2==0){
+		for (int l=0; l<7; l++){
+			if (l%2==0){
+			printf("\t %d",m1[k][l]);
+			}
+		}
+		}
+	}
+		printf("\n Numeros impares: \n");
+	
+	for(int k=0; k<10; k++){
+			printf("\n");
+			if (k%2==1){
+		for (int l=0; l<7; l++){
+			if (l%2==1){
+			printf("\t %d",m1[k][l]);
+					}
+		}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+q)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[3][4];
+	int m2[3];
+	int m3[4];
+	for (int i=0; i<5; i++){
+		for(int j=0; j<3; j++){
+			printf ("Digite os numeros da matriz a[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+		for (int i=0; i<5; i++){
+		for(int j=0; j<3; j++){
+			printf ("Matriz B:[%d][%d]");
+			scanf ("%d",&m2[i]);
+		
+		}
+	}
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<3; l++){	
+			printf("\t %d",m1[k][l]+m2[k]);
+
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+S)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[4][5];
+	int m2[4][5]
+	for (int i=0; i<5; i++){
+		for(int j=0; j<6; j++){
+			if(j%2==0)
+			printf ("Digite os numeros da matriz a[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+		for (int i=0; i<5; i++){
+		for(int j=0; j<6; j++){
+			if(j%2==1)
+			printf ("Matriz B:[%d][%d]");
+			scanf ("%d",&m2[i]);
+		
+		}
+	}
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<6; l++){	
+			printf("\t %d",m1[k][l]+m2[k]);
+
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+V)
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+float c, f;
+int main()
+
+{
+	int m1[4][4];
+	int m2[4][4]
+	for (int i=0; i<5; i++){
+		for(int j=0; j<5; j++){
+			if(j%3==0)
+			printf ("Digite os numeros da matriz a[%d][%d]:",i,j);
+			scanf ("%d",&m1[i][j]);
+		
+		}
+	}
+		for (int i=0; i<5; i++){
+		for(int j=0; j<5; j++){
+			if(j%6==0)
+			printf ("Matriz B:[%d][%d]");
+			scanf ("%d",&m2[i]);
+		
+		}
+	}
+	printf("\n matriz c: \n");
+	
+	for(int k=0; k<5; k++){
+			printf("\n");
+		for (int l=0; l<5; l++){	
+			printf("\t %d",m1[k][l]+m2[k]);
+
+		}
+	}
+	
+}
+
+
+

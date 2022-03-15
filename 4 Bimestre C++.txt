@@ -1,0 +1,964 @@
+Lista de Exercícios
+4° Bimestre
+
+
+
+
+
+Diego Nunes Lino,
+Bruno Braga
+&
+João Pedro Vilas Boas
+
+
+
+
+
+
+
+
+2021
+LE
+Lista 1
+
+a-)
+#include<stdio.h>
+float valor, taxa, temp;
+void reajuste(float v, float tx, float tp){
+	float prestacao;
+	prestacao= v + (v*(tx/100) * tp);
+	printf("NOVA PRESTACAO = %f",prestacao);
+}
+main(){
+	printf("DIGITE O VALOR DA PRESTACAO EM ATRASO:");
+	scanf("%f",&valor);
+	printf("INFORME A TAXA DE JUROS PARA REAJUSTE:");
+	scanf("%f",&taxa);
+	printf("INFORME O TEMPO DE ATRASO DA PRESTACAO:");
+	scanf("%f",&temp);
+	reajuste(valor,taxa,temp);
+}
+------------------------------------------
+#include <stdio.h>
+
+float valor, taxa, tempo;
+// procedimento com passagem de parametro por REFERENCIA 
+void reajuste(float &v, float t, float tp){
+	v = v + ((v * t/100.0) * tp);
+}
+
+main(){
+	printf("Informe o valor para ser reajustado: \n"); 
+	scanf("%f", &valor ); 
+	
+	printf("Informe a taxa de reajuste:\n"); 
+	scanf("%f",&taxa); 
+	
+	printf("Informe a tempo de atraso da parcela:\n"); 
+	scanf("%f",&tempo); 
+	
+	reajuste(valor, taxa, tempo);
+	printf("Nova prestacao = %.2f", valor); 
+}
+
+-----------------------------------------------------------------------------------------
+
+B)
+#include <stdio.h>
+int num;
+void soma (int n){
+
+int s, i;
+s = 0;
+	i = 0;
+	while (i < n)
+{
+	i = i + 1;
+	s = s + i;
+}
+printf("%d\n", s);
+}
+main()
+{
+	printf("Digite um numero: ");
+	scanf("%d", &num);
+	soma(num);
+  return 0;
+}
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdio.h>
+int num;
+void soma (int &n){
+
+int s, i;
+s = 0;
+	i = 0;
+	while (i < n)
+{
+	i = i + 1;
+	s = s + i;
+}
+	n=s;
+}
+main()
+{
+	printf("Digite um numero: ");
+	scanf("%d", &num);
+	soma(num);
+	printf("%d\n", num);
+  return 0;
+}
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+C)
+#include<stdio.h>
+#include<conio.h>
+int n1;
+void fibonacci (int n)
+
+{
+    int a=1,b=1,x,i;
+    if(n==1) x=a;
+    if(n==2) x=b;
+    for(i=3;i<=n;i++){
+    x=a+b;
+    a=b;
+    b=x;
+    printf("o resultado eh = %d\n",x);
+}
+}
+
+main()
+{
+    printf("\nDigite um numero: ");
+    scanf("%d",&n1);
+    fibonacci(n1);
+    return 0;
+}
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include<stdio.h>
+#include<conio.h>
+int n1,passe;
+void fibonacci (int &n,int &x)
+
+{
+    int a=1,b=1,i;
+    if(n==1) x=a;
+    if(n==2) x=b;
+    for(i=3;i<=n;i++){
+    x=a+b;
+    a=b;
+    b=x;
+    
+}
+}
+
+int main()
+{
+    printf("\nDigite um numero: ");
+    scanf("%d",&n1);
+    fibonacci(n1,passe);
+    printf("o resultado eh = %d\n",passe);
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+
+
+d)
+#include <stdio.h>
+#include <math.h>
+int n1,n2;
+void potencia (int x,int y){
+float pot;
+  pot = pow(x,y);
+  printf ("o resultado da potencia eh = %.2f\n",pot);
+
+}
+main(){
+	printf("Digite o primeiro numero para potencia:\n");
+	scanf("%d",&n1);
+	printf("Digite o segundo numero para potencia:\n");
+	scanf("%d",&n2);
+	potencia(n1,n2);
+}
+
+
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdio.h>
+#include <math.h>
+float n1,n2;
+void potencia (float &x,float &y){
+  x = pow(x,y);
+
+}
+main(){
+	printf("Digite o primeiro numero para potencia:\n");
+	scanf("%f",&n1);
+	printf("Digite o segundo numero para potencia:\n");
+	scanf("%f",&n2);
+	potencia(n1,n2);
+	printf ("o resultado da potencia eh = %.2f\n", n1);
+}
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+E)
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void parimpar (int num){
+if(num%2==0)
+{
+printf("Par");
+}
+else
+printf("impar");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+parimpar(n1);
+}
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void parimpar (int &num){
+if(num%2==0)
+{
+printf("Par");
+}
+else
+printf("impar");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+parimpar(n1);
+}
+
+-----------------------------------------------------------------------------------------
+
+
+F)
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int n1,n2,n3;
+void quadrado (int a,int b,int c){
+int quad,quad2,quad3,soma;
+quad =	pow(a,2);
+quad2 = pow (b,2);
+quad3 = pow (c,2);
+soma = quad+quad2+quad3;
+printf("o resultado eh:%d\n",soma);
+}
+main()
+{
+printf("digite um numero:\n ");
+scanf("%d",&n1);
+printf("digite outro numero:\n");
+scanf("%d",&n2);
+printf("Digite outro numero:\n");
+scanf("%d",&n3);
+quadrado(n1,n2,n3);
+}
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int n1,n2,n3;
+void quadrado (int &a,int &b,int &c){
+int quad,quad2,quad3,soma;
+quad =	pow(a,2);
+quad2 = pow (b,2);
+quad3 = pow (c,2);
+a = quad + quad2 +quad3;
+}
+main()
+{
+printf("digite um numero:\n ");
+scanf("%d",&n1);
+printf("digite outro numero:\n");
+scanf("%d",&n2);
+printf("Digite outro numero:\n");
+scanf("%d",&n3);
+quadrado(n1,n2,n3);
+printf("o resultado eh = %d\n",n1);
+}
+
+-----------------------------------------------------------------------------------------
+
+
+g)
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int n1,n2,n3;
+void quadrado (int a,int b,int c){
+int quad,soma;
+soma = a+b+c;
+quad = pow(soma,2);
+printf("o resultado eh:%d\n",quad);
+}
+main()
+{
+printf("digite um numero:\n ");
+scanf("%d",&n1);
+printf("digite outro numero:\n");
+scanf("%d",&n2);
+printf("Digite outro numero:\n");
+scanf("%d",&n3);
+quadrado(n1,n2,n3);
+}
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int n1,n2,n3;
+void quadrado (int &a,int &b,int &c){
+int soma;
+soma = (a+b+c);
+a = pow(soma,2);
+}
+main()
+{
+printf("digite um numero:\n ");
+scanf("%d",&n1);
+printf("digite outro numero:\n");
+scanf("%d",&n2);
+printf("Digite outro numero:\n");
+scanf("%d",&n3);
+quadrado(n1,n2,n3);
+printf("o resultado eh = %d\n",n1);
+}
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+h)
+#include <stdio.h>
+float cel;
+void fahrenheit (float c){
+float f;
+    f = (9 * c + 160) / 5;
+    printf("F = %f", f);
+}
+main(){
+printf("C=");
+scanf("%f",&cel);
+fahrenheit(cel);
+}
+
+
+
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdio.h>
+float cel;
+void fahrenheit (float &c){
+float f;
+    f = (9 * c + 160) / 5;
+	c = f;
+	
+}
+main(){
+printf("C=");
+scanf("%f",&cel);
+fahrenheit(cel);
+printf("F = %f", cel);
+}
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+I)
+#include <stdio.h>
+float real, dolar;
+void dolarhoje(float r,	float d){
+float c;
+c=r*d;
+printf("%.2f*%.2f=%.3f \n O valor digitado de real para dolar e: %.3f\n" ,r,d,c,c);
+}
+
+main()
+{
+    printf("Digite o valor em REAL para a conversao: ");
+    scanf("%f",&real);
+    printf("Digite o valor atual do dolar : ");
+    scanf("%f",&dolar);
+    dolarhoje(real,dolar);
+        
+}
+
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdio.h>
+float real, dolar;
+void dolarhoje(float &r,float &d){
+float c;
+c=r*d;
+r = c;
+}
+
+main()
+{
+    printf("Digite o valor em REAL para a conversao: ");
+    scanf("%f",&real);
+    printf("Digite o valor atual do dolar : ");
+    scanf("%f",&dolar);
+    dolarhoje(real,dolar);
+    printf("O valor digitado de real para dolar e: %.3f\n" ,real);    
+}
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+J)
+
+
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void divisivel (int num){
+if((num%2==0) && (num%3==0))
+
+printf("O numero e divisivel por 2 e 3\n");
+
+else
+
+printf("valor invalido!\n");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+divisivel(n1);
+}
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void divisivel (int &num){
+if((num%2==0) && (num%3==0))
+
+printf("O numero e divisivel por 2 e 3\n");
+
+else
+
+printf("valor invalido!\n");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+divisivel(n1);
+}
+
+
+-----------------------------------------------------------------------------------------
+
+K)
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void divisivel (int num){
+if((num%2==0) || (num%3==0))
+
+printf("O numero e divisivel por 2 ou 3\n");
+
+else
+
+printf("valor invalido!\n");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+divisivel(n1);
+}
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void divisivel (int &num){
+if((num%2==0) || (num%3==0))
+
+printf("O numero e divisivel por 2 ou 3\n");
+
+else
+
+printf("valor invalido!\n");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+divisivel(n1);
+}
+
+-----------------------------------------------------------------------------------------
+
+
+L)
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void divisivel (int num){
+if((num%2==1) && (num%3==1))
+
+printf("O numero nao e divisivel por 2 e 3\n");
+
+else
+
+printf("valor invalido!\n");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+divisivel(n1);
+}
+
+
+
+
+
+
+
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void divisivel (int &num){
+if((num 2==1) && (num 3==1))
+
+printf("O numero nao e divisivel por 2 e 3\n");
+
+else
+
+printf("valor invalido!\n");
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+divisivel(n1);
+}
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+M)
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void negativo (int x){
+int y;
+y = x * -1;
+printf("O numero eh: %d",y);
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+if(n1 < 0)
+{
+negativo(n1);
+}
+else 
+printf("o numero eh: %d",n1);
+}
+
+
+
+
+
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include <stdlib.h>
+#include <stdio.h>
+int n1;
+void negativo (int &x){
+int y;
+y = x * -1;
+x = y;
+}
+
+main(){
+printf("digite um numero inteiro: ");
+scanf("%d",&n1);
+if(n1 < 0)
+{
+negativo(n1);
+printf("o numero eh: %d",n1);
+}
+else 
+printf("o numero eh: %d",n1);
+}
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+N)
+#include<stdio.h>
+
+int n;
+void fatorial (int num){
+	int fat;
+	for(fat = 1; n > 1; n = n - 1)
+  {
+      fat = fat * n;
+  }
+  printf("\n%d", fat);
+}
+
+int main()
+{
+	printf("digite um numero inteiro:");
+  	scanf("%d",&n);
+  	fatorial(n);
+}
+
+
+
+
+
+------------------------------------------
+
+procedimento com passagem de parametro por REFERENCIA
+#include<stdio.h>
+
+int n;
+void fatorial (int &num){
+	int fat;
+	for(fat = 1; n > 1; n = n - 1)
+  {
+      fat = fat * n;
+  }
+  n=fat;
+}
+
+int main()
+{
+	printf("digite um numero inteiro:");
+  	scanf("%d",&n);
+  	fatorial(n);
+  	printf("\n%d", n);
+}
+
+
+
+
+
+Lista 2 
+
+A)
+
+#include <stdio.h>
+int num,passe;
+int soma (int n){
+
+int s, i;
+s = 0;
+	i = 0;
+	while (i < n)
+{
+	i = i + 1;
+	s = s + i;
+}
+return s;
+}
+main()
+{
+	printf("Digite um numero: ");
+	scanf("%d", &num);
+	passe = soma (num);
+	printf("a soma dos n primeiros numeros eh: %d",passe);
+}
+
+-----------------------------------------------------------------------------------------
+
+B)
+#include<stdio.h>
+#include<conio.h>
+
+double fibonacci (int n)
+{
+    int a=1,b=1,x,i;
+    if(n==1) x=a;
+    if(n==2) x=b;
+    for(i=3;i<=n;i++){
+    x=a+b;
+    a=b;
+    b=x;
+}
+    return x;
+}
+
+int main()
+{
+    int x,n;
+    printf("\nDigite n-esimo termo: ");
+    scanf("%d",&n);
+    x=fibonacci(n);
+    printf("\n\n%d\n",x);
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+
+
+C)
+#include <stdio.h>
+#include <string.h>
+float valor,taxa,temp,prest;
+float reajuste(float v,float tx,float tp){
+	float prestacao;
+	prestacao = v+ (v*(tx/100.0)*tp);
+	return prestacao;
+}
+main(){
+	printf("digite o valor da prestacao em atraso:\n");
+	scanf("%f",&valor);
+	printf("Informe a taxa de juros para reajuste:\n");
+	scanf("%f",&taxa);
+	printf("informe o tempo de atraso da prestacao:\n");
+	scanf("%f",&temp);
+	prest = reajuste(valor,taxa,temp);
+	printf ("Nova prestacao = %.2f",prest);
+}
+
+
+-----------------------------------------------------------------------------------------
+
+D)
+#include <stdio.h>
+#include <math.h>
+float n1,n2,passe;
+float potencia (float x,float y){
+float pot;
+  	pot = pow(x,y);
+	return pot;
+}
+main(){
+	printf("Digite o primeiro numero para potencia:\n");
+	scanf("%f",&n1);
+	printf("Digite o segundo numero para potencia:\n");
+	scanf("%f",&n2);
+	passe = potencia(n1,n2);
+	printf ("o resultado da potencia eh = %.2f\n",passe);
+}
+
+-----------------------------------------------------------------------------------------
+
+
+E)
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int n1,n2,n3,passe;
+int quadrado (int a,int b,int c){
+int quad,quad2,quad3,soma;
+quad =	pow(a,2);
+quad2 = pow (b,2);
+quad3 = pow (c,2);
+soma = quad+quad2+quad3;
+return soma;
+}
+main()
+{
+printf("digite um numero:\n ");
+scanf("%d",&n1);
+printf("digite outro numero:\n");
+scanf("%d",&n2);
+printf("Digite outro numero:\n");
+scanf("%d",&n3);
+passe = quadrado(n1,n2,n3);
+printf("o resultado eh = %d",passe);
+}
+
+
+-----------------------------------------------------------------------------------------
+
+
+F) 
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int n1,n2,n3,passe;
+int quadrado (int a,int b,int c){
+int quad,soma;
+soma = a+b+c;
+quad = pow(soma,2);
+return quad;
+}
+main()
+{
+printf("digite um numero:\n ");
+scanf("%d",&n1);
+printf("digite outro numero:\n");
+scanf("%d",&n2);
+printf("Digite outro numero:\n");
+scanf("%d",&n3);
+passe = quadrado(n1,n2,n3);
+printf("o resultado eh:%d\n",passe);
+}
+
+-----------------------------------------------------------------------------------------
+
+G) 
+#include <stdio.h>
+float real, dolar,passe;
+float dolarhoje(float r,float d){
+float c;
+c=r*d;
+r = c;
+return r;
+}
+
+main()
+{
+    printf("Digite o valor em REAL para a conversao: ");
+    scanf("%f",&real);
+    printf("Digite o valor atual do dolar : ");
+    scanf("%f",&dolar);
+    passe = dolarhoje(real,dolar);
+    printf("O valor digitado de real para dolar e: %.3f\n" ,passe);    
+}
+
+
+-----------------------------------------------------------------------------------------
+
+H)
+#include <stdio.h>
+float real, dolar,passe;
+float dolarhoje(float r,float d){
+float c;
+c=r/d;
+r = c;
+return r;
+}
+
+main()
+{
+	printf("Digite o valor atual do dolar : ");
+    scanf("%f",&dolar);
+    printf("Digite o valor de dolar para real: ");
+    scanf("%f",&real); 
+    passe = dolarhoje(dolar,real);
+    printf("O valor digitado de real para dolar e: %.3f\n" ,passe);    
+}
+
+
+-----------------------------------------------------------------------------------------
+
+
+I)
+
+#include <stdio.h>
+float fah,passe;
+float celcius (float f){
+float c;	
+	c = (f - 32) * 5 / 9;
+	return c;
+}
+main()
+{
+ 
+    printf("F = "); 
+	scanf("%f", &fah);
+ 
+    passe = celcius(fah);
+ 
+    printf("C = %f", passe);
+ 
+    return(0);
+}
+
