@@ -1,5 +1,5 @@
 Lista de exercícios Python 1 Bimestre
-Bruno Braga 2-HID
+
 
 A)
 celsius = float(input("Digite a temperatura em celsius: "))
